@@ -21,6 +21,8 @@ class AM_TestCharacter : public ACharacter
 public:
 	AM_TestCharacter();
 
+	virtual void BeginPlay() override;
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -32,6 +34,19 @@ public:
 	//----------------------------------------------------------------------------------------
 	UPROPERTY(VisibleAnywhere, Category = "Stat")
 		class UM_CharacterStatComponent* CharacterStat;
+
+	UPROPERTY(VisibleAnywhere, Category = "UI")
+		class UWidgetComponent* HPBarWidget;
+
+	void PostInitializeComponents();
+
+	float TakeDamage(float DamageAmount, FDamageEvent const DamageEvent, AController* EventInstigator, AActor* DamageCauser);
+
+	void AttackCheck();
+
+public:
+	UPROPERTY(EditAnywhere, Category = "TimeLine")
+		UCurveFloat* CurveFloat;
 
 protected:
 

@@ -987,3 +987,317 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2022.10.23-09.54.21:030][174]LogUObjectHash: Compacting FUObjectHashTables data took   4.02ms
 [2022.10.23-09.54.21:089][175]LogPlayLevel: Display: Destroying online subsystem :Context_4
 [2022.10.23-09.55.01:493][575]LogUObjectHash: Compacting FUObjectHashTables data took   2.89ms
+[2022.10.23-10.16.17:303][590]Candidate modules for hot reload:
+[2022.10.23-10.16.17:303][590]  M_Test
+[2022.10.23-10.16.17:303][590]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=M_Test,0407 M_TestEditor Win64 Development -Project="D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject" "D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject"  -IgnoreJunk]
+[2022.10.23-10.16.17:317][590]Warning: Starting HotReload took  0.0s.
+[2022.10.23-10.16.51:279][766]CompilerResultsLog: New page: 컴파일 - 2022. 10. 24. 오전 4:16:51
+[2022.10.23-10.16.51:279][766]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Documents\GitHub\M_Test).
+[2022.10.23-10.16.51:279][766]CompilerResultsLog: Parsing headers for M_TestEditor
+[2022.10.23-10.16.51:279][766]CompilerResultsLog:   Running UnrealHeaderTool "D:\Documents\GitHub\M_Test\M_Test\M_Test.uproject" "D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\M_TestEditor\Development\M_TestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\????\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.10.23-10.16.51:279][766]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.10.23-10.16.51:280][766]CompilerResultsLog: Reflection code generated for M_TestEditor in 7.4988251 seconds
+[2022.10.23-10.16.51:280][766]CompilerResultsLog: Building M_TestEditor...
+[2022.10.23-10.16.51:280][766]CompilerResultsLog: Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.10.23-10.16.51:280][766]CompilerResultsLog: Building 8 actions with 8 processes...
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   [1/8] M_TestGameMode.cpp
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(38): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(81): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h(14): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   [2/8] M_CharacterStatComponent.gen.cpp
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   [3/8] M_TestCharacter.gen.cpp
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test/M_TestCharacter.h(38): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test/M_TestCharacter.h(81): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h(31): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   [4/8] M_CharacterStatComponent.cpp
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   [5/8] M_TestCharacter.cpp
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(38): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(81): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h(31): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   [6/8] UE4Editor-M_Test-0407.lib
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:      D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-0407.lib ???̺귯?? ?? D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-0407.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   [7/8] UE4Editor-M_Test-0407.dll
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:      D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-0407.suppressed.lib ???̺귯?? ?? D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-0407.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.10.23-10.16.51:280][766]CompilerResultsLog:   [8/8] M_TestEditor.target
+[2022.10.23-10.16.51:280][766]CompilerResultsLog: Total time in Parallel executor: 24.40 seconds
+[2022.10.23-10.16.51:280][766]CompilerResultsLog: Total execution time: 33.81 seconds
+[2022.10.23-10.16.51:280][766]LogMainFrame: MainFrame: Module compiling took 33.981 seconds
+[2022.10.23-10.16.51:292][766]LogClass: Could not find existing class M_CharacterStatComponent in package /Script/M_Test for HotReload, assuming new class
+[2022.10.23-10.16.51:298][766]LogClass: M_CharacterData HotReload.
+[2022.10.23-10.16.51:305][766]LogHotReload: Re-instancing M_CharacterStatComponent after hot-reload.
+[2022.10.23-10.16.51:334][766]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'M_Test' in 0.0004 seconds. Added 4 classes and 2 folders.
+[2022.10.23-10.16.51:340][766]Display: HotReload successful (0 functions remapped  1 scriptstructs remapped)
+[2022.10.23-10.16.51:458][766]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0102 seconds. Added 3826 classes and 930 folders.
+[2022.10.23-10.16.51:458][766]Display: HotReload took 34.2s.
+[2022.10.23-10.17.19:206][505]LogContentBrowser: Deferred new asset file creation: NewWidgetBlueprint
+[2022.10.23-10.17.19:224][505]LogContentBrowser: Creating deferred item: NewWidgetBlueprint
+[2022.10.23-10.17.30:194][682]LogContentBrowser: Attempting asset rename: NewWidgetBlueprint -> WB_HPBar
+[2022.10.23-10.17.30:210][682]LogContentBrowser: End creating deferred item NewWidgetBlueprint
+[2022.10.23-10.17.32:080][867]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/UI/WB_HPBar.WB_HPBar
+[2022.10.23-10.17.33:458][867]LogSlate: Took 0.000381 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.10.23-10.18.32:797][756]LogEditorTransaction: Undo 컴포넌트에 클릭 (트리 뷰)
+[2022.10.23-10.18.33:426][774]LogEditorTransaction: Undo 액터 클릭
+[2022.10.23-10.19.05:534][ 73]LogSlate: Took 0.002290 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2022.10.23-10.20.12:509][394]LogSlate: Window '색상 선택 툴' being destroyed
+[2022.10.23-10.22.22:350][478]LogEditorTransaction: Undo 클립보드 내용을 붙여넣습니다.
+[2022.10.23-10.23.43:149][718]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.10.23-10.23.48:178][130]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.10.23-10.23.50:085][257]LogEditorTransaction: Undo Angle 편집
+[2022.10.23-10.23.52:660][481]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.10.23-10.23.54:763][650]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.10.23-10.23.57:619][898]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.10.23-10.24.00:324][126]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.10.23-10.24.06:656][681]LogEditorTransaction: Undo X 편집
+[2022.10.23-10.24.21:338][931]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.10.23-10.24.30:807][720]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.10.23-10.24.32:547][830]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.10.23-10.24.47:252][ 85]LogEditorTransaction: Undo 벡터 프로퍼티 설정
+[2022.10.23-10.25.07:897][890]BlueprintLog: New page: WB_HPBar 컴파일
+[2022.10.23-10.25.08:041][890]LogUObjectHash: Compacting FUObjectHashTables data took   7.07ms
+[2022.10.23-10.25.08:161][890]LogSlate: Took 0.000341 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2022.10.23-10.25.08:163][890]LogSlate: Took 0.002195 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2022.10.23-10.25.08:548][924]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/WB_HPBar" FILE="../../../../../../Documents/GitHub/M_Test/M_Test/Content/UI/WB_HPBar.uasset" SILENT=true
+[2022.10.23-10.25.08:567][924]LogSavePackage: Moving '../../../../../../Documents/GitHub/M_Test/M_Test/Saved/WB_HPBar40620560472906B508AACF879A6779D0.tmp' to '../../../../../../Documents/GitHub/M_Test/M_Test/Content/UI/WB_HPBar.uasset'
+[2022.10.23-10.25.08:596][924]AssetCheck: New page: 에셋 저장:  WB_HPBar
+[2022.10.23-10.25.08:596][924]LogContentValidation: Display: WidgetBlueprint /Game/UI/WB_HPBar.WB_HPBar 유효성 검사 중
+[2022.10.23-10.26.26:950][903]BlueprintLog: New page: WB_HPBar 컴파일
+[2022.10.23-10.26.27:056][903]LogUObjectHash: Compacting FUObjectHashTables data took   5.05ms
+[2022.10.23-10.26.27:409][922]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/WB_HPBar" FILE="../../../../../../Documents/GitHub/M_Test/M_Test/Content/UI/WB_HPBar.uasset" SILENT=true
+[2022.10.23-10.26.27:417][922]LogSavePackage: Moving '../../../../../../Documents/GitHub/M_Test/M_Test/Saved/WB_HPBar2821E688401432DC40478188578769F3.tmp' to '../../../../../../Documents/GitHub/M_Test/M_Test/Content/UI/WB_HPBar.uasset'
+[2022.10.23-10.26.27:439][922]AssetCheck: New page: 에셋 저장:  WB_HPBar
+[2022.10.23-10.26.27:439][922]LogContentValidation: Display: WidgetBlueprint /Game/UI/WB_HPBar.WB_HPBar 유효성 검사 중
+[2022.10.23-10.28.45:478][603]Candidate modules for hot reload:
+[2022.10.23-10.28.45:478][603]  M_Test
+[2022.10.23-10.28.45:478][603]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=M_Test,2794 M_TestEditor Win64 Development -Project="D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject" "D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject"  -IgnoreJunk]
+[2022.10.23-10.28.45:490][603]Warning: Starting HotReload took  0.0s.
+[2022.10.23-10.29.09:200][853]CompilerResultsLog: New page: 컴파일 - 2022. 10. 24. 오전 4:29:09
+[2022.10.23-10.29.09:200][853]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Documents\GitHub\M_Test).
+[2022.10.23-10.29.09:200][853]CompilerResultsLog: Invalidating makefile for M_TestEditor (M_Test.Build.cs modified)
+[2022.10.23-10.29.09:200][853]CompilerResultsLog: Parsing headers for M_TestEditor
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   Running UnrealHeaderTool "D:\Documents\GitHub\M_Test\M_Test\M_Test.uproject" "D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\M_TestEditor\Development\M_TestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\????\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.10.23-10.29.09:200][853]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.10.23-10.29.09:200][853]CompilerResultsLog: Reflection code generated for M_TestEditor in 6.7554823 seconds
+[2022.10.23-10.29.09:200][853]CompilerResultsLog: Building M_TestEditor...
+[2022.10.23-10.29.09:200][853]CompilerResultsLog: Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.10.23-10.29.09:200][853]CompilerResultsLog: Building 7 actions with 8 processes...
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   [1/7] M_Test.init.gen.cpp
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   [2/7] M_TestGameMode.cpp
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(41): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(84): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h(14): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   [3/7] M_TestCharacter.gen.cpp
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test/M_TestCharacter.h(41): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test/M_TestCharacter.h(84): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-10.29.09:200][853]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h(31): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:   [4/7] M_TestCharacter.cpp
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(41): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(84): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h(31): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:   [5/7] UE4Editor-M_Test-2794.lib
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:      D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-2794.lib ???̺귯?? ?? D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-2794.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:   [6/7] UE4Editor-M_Test-2794.dll
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:      D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-2794.suppressed.lib ???̺귯?? ?? D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-2794.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.10.23-10.29.09:201][853]CompilerResultsLog:   [7/7] M_TestEditor.target
+[2022.10.23-10.29.09:201][853]CompilerResultsLog: Total time in Parallel executor: 12.26 seconds
+[2022.10.23-10.29.09:201][853]CompilerResultsLog: Total execution time: 23.55 seconds
+[2022.10.23-10.29.09:201][853]LogMainFrame: MainFrame: Module compiling took 23.729 seconds
+[2022.10.23-10.29.09:220][853]LogClass: Could not find existing class M_TestCharacter in package /Script/M_Test for HotReload, assuming new class
+[2022.10.23-10.29.09:223][853]LogClass: M_CharacterData HotReload.
+[2022.10.23-10.29.09:236][853]LogHotReload: Re-instancing M_TestCharacter after hot-reload.
+[2022.10.23-10.29.09:395][853]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'M_Test' in 0.0003 seconds. Added 4 classes and 2 folders.
+[2022.10.23-10.29.09:401][853]Display: HotReload successful (0 functions remapped  1 scriptstructs remapped)
+[2022.10.23-10.29.09:549][853]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0111 seconds. Added 3826 classes and 930 folders.
+[2022.10.23-10.29.09:549][853]Display: HotReload took 24.1s.
+[2022.10.23-10.34.31:254][577]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2022.10.23-10.35.08:842][  0]Running D:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject" -game -rocket -progress
+[2022.10.23-10.35.09:357][  0]Discovering modules, targets and source code for project...
+[2022.10.23-10.35.15:092][  0]Binding IntelliSense data...
+[2022.10.23-10.35.21:448][  0]Binding IntelliSense data... 100%
+[2022.10.23-10.35.21:448][  0]Writing project files...
+[2022.10.23-10.35.26:380][  0]Writing project files... 100%
+[2022.10.23-10.35.26:600][  0]Candidate modules for hot reload:
+[2022.10.23-10.35.26:601][  0]  M_Test
+[2022.10.23-10.35.26:601][  0]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=M_Test,7537 M_TestEditor Win64 Development -Project="D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject" "D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject"  -IgnoreJunk]
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: New page: 컴파일 - 2022. 10. 24. 오전 4:37:21
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Documents\GitHub\M_Test).
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: Creating makefile for M_TestEditor (no existing makefile)
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: Parsing headers for M_TestEditor
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   Running UnrealHeaderTool "D:\Documents\GitHub\M_Test\M_Test\M_Test.uproject" "D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\M_TestEditor\Development\M_TestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\????\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: Reflection code generated for M_TestEditor in 5.4588348 seconds
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: Building M_TestEditor...
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: Building 7 actions with 8 processes...
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   [1/7] M_Test.init.gen.cpp
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   [2/7] M_CharacterWidget.cpp
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   [3/7] M_CharacterWidget.gen.cpp
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   [4/7] M_TestCharacter.cpp
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(41): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(84): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h(31): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   [5/7] UE4Editor-M_Test-7537.lib
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:      D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-7537.lib ???̺귯?? ?? D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-7537.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   [6/7] UE4Editor-M_Test-7537.dll
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:      D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-7537.suppressed.lib ???̺귯?? ?? D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-7537.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog:   [7/7] M_TestEditor.target
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: Total time in Parallel executor: 106.86 seconds
+[2022.10.23-10.37.21:996][  0]CompilerResultsLog: Total execution time: 115.24 seconds
+[2022.10.23-10.37.21:996][  0]LogMainFrame: MainFrame: Module compiling took 115.402 seconds
+[2022.10.23-10.37.22:017][  0]LogClass: Could not find existing class M_CharacterWidget in package /Script/M_Test for HotReload, assuming new class
+[2022.10.23-10.37.22:030][  0]LogClass: M_CharacterData HotReload.
+[2022.10.23-10.37.22:036][  0]LogUObjectGlobals: Warning: 'Class /Game/UI/WB_HPBar.WB_HPBar' 오브젝트를 찾는 데 실패했습니다.
+[2022.10.23-10.37.22:036][  0]Error: CDO Constructor (M_TestCharacter): Failed to find /Game/UI/WB_HPBar.WB_HPBar
+
+[2022.10.23-10.37.22:038][  0]LogHotReload: Re-instancing M_TestCharacter after hot-reload.
+[2022.10.23-10.37.22:227][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'M_Test' in 0.0003 seconds. Added 5 classes and 2 folders.
+[2022.10.23-10.37.22:229][  0]Warning: Some classes could not be reloaded:
+Error: CDO Constructor (M_TestCharacter): Failed to find /Game/UI/WB_HPBar.WB_HPBar
+
+
+[2022.10.23-10.37.22:237][  0]Display: HotReload successful (0 functions remapped  1 scriptstructs remapped)
+[2022.10.23-10.37.22:429][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0146 seconds. Added 3827 classes and 930 folders.
+[2022.10.23-10.37.22:429][  0]Display: HotReload took 115.8s.
+[2022.10.23-10.37.22:436][  0]Warning: HotReload operation took 115.9s.
+[2022.10.23-10.37.22:971][  0]LogVSAccessor: Warning: Couldn't goto line number '1' in 'D:/Documents/GitHub/M_Test/M_Test/Source/M_Test/M_CharacterWidget.cpp'
+[2022.10.23-10.37.23:040][  0]LogSlate: Window 'C++ 클래스 추가' being destroyed
+[2022.10.23-10.37.23:556][  1]LogHotReload: New module detected: UE4Editor-M_Test-7537.dll
+[2022.10.23-10.37.23:590][  2]LogHotReload: Starting Hot-Reload from IDE
+[2022.10.23-10.37.23:621][  2]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'M_Test' in 0.0004 seconds. Added 5 classes and 2 folders.
+[2022.10.23-10.37.23:636][  2]Display: HotReload successful (0 functions remapped  1 scriptstructs remapped)
+[2022.10.23-10.37.23:653][  2]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0112 seconds. Added 3827 classes and 930 folders.
+[2022.10.23-10.37.23:658][  2]Display: HotReload took  0.1s.
+[2022.10.23-12.11.04:053][131]Candidate modules for hot reload:
+[2022.10.23-12.11.04:053][131]  M_Test
+[2022.10.23-12.11.04:054][131]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=M_Test,5776 M_TestEditor Win64 Development -Project="D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject" "D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject"  -IgnoreJunk]
+[2022.10.23-12.11.04:066][131]Warning: Starting HotReload took  0.0s.
+[2022.10.23-12.11.26:240][723]CompilerResultsLog: New page: 컴파일 - 2022. 10. 24. 오전 6:11:26
+[2022.10.23-12.11.26:240][723]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Documents\GitHub\M_Test).
+[2022.10.23-12.11.26:240][723]CompilerResultsLog: Parsing headers for M_TestEditor
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:   Running UnrealHeaderTool "D:\Documents\GitHub\M_Test\M_Test\M_Test.uproject" "D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\M_TestEditor\Development\M_TestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\????\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.10.23-12.11.26:240][723]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.10.23-12.11.26:240][723]CompilerResultsLog: Reflection code generated for M_TestEditor in 7.1548236 seconds
+[2022.10.23-12.11.26:240][723]CompilerResultsLog: Building M_TestEditor...
+[2022.10.23-12.11.26:240][723]CompilerResultsLog: Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.10.23-12.11.26:240][723]CompilerResultsLog: Building 6 actions with 8 processes...
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:   [1/6] M_CharacterStatComponent.gen.cpp
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:   [2/6] M_CharacterStatComponent.cpp
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:   [3/6] M_TestCharacter.cpp
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(41): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(84): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h(31): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:   [4/6] UE4Editor-M_Test-5776.lib
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:      D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-5776.lib ???̺귯?? ?? D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-5776.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:   [5/6] UE4Editor-M_Test-5776.dll
+[2022.10.23-12.11.26:240][723]CompilerResultsLog:      D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-5776.suppressed.lib ???̺귯?? ?? D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-5776.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.10.23-12.11.26:241][723]CompilerResultsLog:   [6/6] M_TestEditor.target
+[2022.10.23-12.11.26:241][723]CompilerResultsLog: Total time in Parallel executor: 12.94 seconds
+[2022.10.23-12.11.26:241][723]CompilerResultsLog: Total execution time: 21.92 seconds
+[2022.10.23-12.11.26:241][723]LogMainFrame: MainFrame: Module compiling took 22.193 seconds
+[2022.10.23-12.11.26:259][723]LogClass: Could not find existing class M_CharacterStatComponent in package /Script/M_Test for HotReload, assuming new class
+[2022.10.23-12.11.26:276][723]LogClass: M_CharacterData HotReload.
+[2022.10.23-12.11.26:283][723]LogHotReload: Re-instancing M_CharacterStatComponent after hot-reload.
+[2022.10.23-12.11.26:328][723]Error: CDO Constructor (M_TestCharacter): Failed to find /Game/UI/WB_HPBar.WB_HPBar
+
+[2022.10.23-12.11.26:330][723]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'M_Test' in 0.0003 seconds. Added 5 classes and 2 folders.
+[2022.10.23-12.11.26:331][723]Warning: Some classes could not be reloaded:
+Error: CDO Constructor (M_TestCharacter): Failed to find /Game/UI/WB_HPBar.WB_HPBar
+
+
+[2022.10.23-12.11.26:343][723]Display: HotReload successful (0 functions remapped  1 scriptstructs remapped)
+[2022.10.23-12.11.26:573][723]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0100 seconds. Added 3827 classes and 930 folders.
+[2022.10.23-12.11.26:573][723]Display: HotReload took 22.6s.
+[2022.10.23-12.41.18:926][681]Candidate modules for hot reload:
+[2022.10.23-12.41.18:926][681]  M_Test
+[2022.10.23-12.41.18:926][681]Launching UnrealBuildTool... [D:/Program Files/Epic Games/UE_4.27/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=M_Test,6129 M_TestEditor Win64 Development -Project="D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject" "D:/Documents/GitHub/M_Test/M_Test/M_Test.uproject"  -IgnoreJunk]
+[2022.10.23-12.41.18:938][681]Warning: Starting HotReload took  0.0s.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog: New page: 컴파일 - 2022. 10. 24. 오전 6:41:43
+[2022.10.23-12.41.43:185][543]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (D:\Documents\GitHub\M_Test).
+[2022.10.23-12.41.43:185][543]CompilerResultsLog: Parsing headers for M_TestEditor
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   Running UnrealHeaderTool "D:\Documents\GitHub\M_Test\M_Test\M_Test.uproject" "D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\M_TestEditor\Development\M_TestEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\????\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2022.10.23-12.41.43:185][543]CompilerResultsLog: LogInit: Display: Loading text-based GConfig....
+[2022.10.23-12.41.43:185][543]CompilerResultsLog: Reflection code generated for M_TestEditor in 6.949261 seconds
+[2022.10.23-12.41.43:185][543]CompilerResultsLog: Building M_TestEditor...
+[2022.10.23-12.41.43:185][543]CompilerResultsLog: Using Visual Studio 2019 14.29.30146 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.10.23-12.41.43:185][543]CompilerResultsLog: Building 9 actions with 8 processes...
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   [1/9] M_Test.init.gen.cpp
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   [2/9] M_TestGameMode.cpp
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(43): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(90): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h(14): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   [3/9] M_TestCharacter.gen.cpp
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test/M_TestCharacter.h(43): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test/M_TestCharacter.h(90): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h(31): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   [4/9] M_CharacterWidget.gen.cpp
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   [5/9] M_CharacterWidget.cpp
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   [6/9] M_TestCharacter.cpp
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(43): warning C4263: 'float AM_TestCharacter::TakeDamage(float,const FDamageEvent,AController *,AActor *)': ???? ?Լ??? ?⺻ Ŭ???? ???? ???? ?Լ??? ?????????? ?ʽ??ϴ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_TestCharacter.h(90): warning C4264: 'float APawn::TakeDamage(float,const FDamageEvent &,AController *,AActor *)': ?⺻ 'APawn'?? ???? ???? ?Լ??? ???? ?????Ǹ? ?????? ?? ?????ϴ?. ?Լ??? ???????ϴ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Pawn.h(247): note: 'APawn::TakeDamage' ?????? ?????Ͻʽÿ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerController.h(31): note: 'APawn' ?????? ?????Ͻʽÿ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   [7/9] UE4Editor-M_Test-6129.lib
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:      D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-6129.lib ???̺귯?? ?? D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-6129.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   [8/9] UE4Editor-M_Test-6129.dll
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:      D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-6129.suppressed.lib ???̺귯?? ?? D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Development\M_Test\UE4Editor-M_Test-6129.suppressed.exp ??ü?? ?????ϰ? ?ֽ??ϴ?.
+[2022.10.23-12.41.43:185][543]CompilerResultsLog:   [9/9] M_TestEditor.target
+[2022.10.23-12.41.43:185][543]CompilerResultsLog: Total time in Parallel executor: 15.41 seconds
+[2022.10.23-12.41.43:185][543]CompilerResultsLog: Total execution time: 24.09 seconds
+[2022.10.23-12.41.43:185][543]LogMainFrame: MainFrame: Module compiling took 24.265 seconds
+[2022.10.23-12.41.43:205][543]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2022.10.23-12.41.43:206][543]LogWindows: Windows GetLastError: 작업을 완료했습니다. (0)
+[2022.10.23-12.41.45:925][543]LogWindows: Error: === Critical error: ===
+[2022.10.23-12.41.45:925][543]LogWindows: Error: 
+[2022.10.23-12.41.45:925][543]LogWindows: Error: Fatal error: [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp] [Line: 2416] 
+[2022.10.23-12.41.45:925][543]LogWindows: Error: Objects have the same fully qualified name but different paths.
+[2022.10.23-12.41.45:925][543]LogWindows: Error: 	New Object: M_CharacterStatComponent /Engine/Transient.Default__M_CharacterStatComponent
+[2022.10.23-12.41.45:925][543]LogWindows: Error: 	Existing Object: HOTRELOADED_M_CharacterStatComponent_3 /Engine/Transient.Default__M_CharacterStatComponent
+[2022.10.23-12.41.45:925][543]LogWindows: Error: 
+[2022.10.23-12.41.45:925][543]LogWindows: Error: 
+[2022.10.23-12.41.45:925][543]LogWindows: Error: [Callstack] 0x00007ffb5cbecd29 KERNELBASE.dll!UnknownFunction []
+[2022.10.23-12.41.45:925][543]LogWindows: Error: [Callstack] 0x00007ffafd770216 UE4Editor-Core.dll!ReportAssert() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Windows\WindowsPlatformCrashContext.cpp:1644]
+[2022.10.23-12.41.45:925][543]LogWindows: Error: [Callstack] 0x00007ffafd774218 UE4Editor-Core.dll!FWindowsErrorOutputDevice::Serialize() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Windows\WindowsErrorOutputDevice.cpp:78]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafd49242d UE4Editor-Core.dll!FOutputDevice::LogfImpl() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Misc\OutputDevice.cpp:61]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafe40eaa6 UE4Editor-CoreUObject.dll!StaticAllocateObject() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectGlobals.cpp:2411]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffb55ef2cf1 UE4Editor-M_Test-6129.dll!UM_CharacterStatComponent::__VTableCtorCaller() [D:\Documents\GitHub\M_Test\M_Test\Source\M_Test\M_CharacterStatComponent.h:15]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafe10eb05 UE4Editor-CoreUObject.dll!UClass::HotReloadPrivateStaticClass() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\Class.cpp:5125]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafe10ba3d UE4Editor-CoreUObject.dll!GetPrivateStaticClassBody() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\Class.cpp:5527]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffb55ef903b UE4Editor-M_Test-6129.dll!UM_CharacterStatComponent::GetPrivateStaticClass() [D:\Documents\GitHub\M_Test\M_Test\Intermediate\Build\Win64\UE4Editor\Inc\M_Test\M_CharacterStatComponent.gen.cpp:105]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffb55ef8e94 UE4Editor-M_Test-6129.dll!TClassCompiledInDefer<UM_CharacterStatComponent>::Register() [D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject\UObjectBase.h:301]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafe416ddd UE4Editor-CoreUObject.dll!UClassRegisterAllCompiledInClasses() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:805]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafe3f52d3 UE4Editor-CoreUObject.dll!ProcessNewlyLoadedUObjects() [D:\Build\++UE4\Sync\Engine\Source\Runtime\CoreUObject\Private\UObject\UObjectBase.cpp:989]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafe2bddc5 UE4Editor-CoreUObject.dll!TBaseStaticDelegateInstance<void __cdecl(FName,bool),FDefaultDelegateUserPolicy>::ExecuteIfSafe() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateInstancesImpl.h:731]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafd4d1bea UE4Editor-Core.dll!TMulticastDelegate<void __cdecl(FName,bool),FDefaultDelegateUserPolicy>::Broadcast() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Delegates\DelegateSignatureImpl.inl:955]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafd4f15a3 UE4Editor-Core.dll!FModuleManager::LoadModuleWithFailureReason() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:519]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafd4f0618 UE4Editor-Core.dll!FModuleManager::LoadModule() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Modules\ModuleManager.cpp:353]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffad467b047 UE4Editor-HotReload.dll!FHotReloadModule::DoHotReloadInternal() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:799]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffad4678fa7 UE4Editor-HotReload.dll!UE4Function_Private::TFunctionRefCaller<<lambda_d85446a946c3f6776c68ebfeb93e5785>,void __cdecl(TMap<FName,FString,FDefaultSetAllocator,TDefaultMapHashableKeyFuncs<FName,FString,0> > const &,bool,enum ECompilationResult::Type)>::Call() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Public\Templates\Function.h:549]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffad4679b6d UE4Editor-HotReload.dll!FHotReloadModule::CheckForFinishedModuleDLLCompile() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1863]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffad468c709 UE4Editor-HotReload.dll!FHotReloadModule::Tick() [D:\Build\++UE4\Sync\Engine\Source\Developer\HotReload\Private\HotReload.cpp:1415]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffafd201d93 UE4Editor-Core.dll!FTicker::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Core\Private\Containers\Ticker.cpp:95]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ff7ce7abca8 UE4Editor.exe!FEngineLoop::Tick() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\LaunchEngineLoop.cpp:5132]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ff7ce7c0fcc UE4Editor.exe!GuardedMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Launch.cpp:178]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ff7ce7c10ba UE4Editor.exe!GuardedMainWrapper() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:137]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ff7ce7c40dd UE4Editor.exe!LaunchWindowsStartup() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:273]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ff7ce7d5984 UE4Editor.exe!WinMain() [D:\Build\++UE4\Sync\Engine\Source\Runtime\Launch\Private\Windows\LaunchWindows.cpp:320]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ff7ce7d853a UE4Editor.exe!__scrt_common_main_seh() [d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288]
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffb5e037034 KERNEL32.DLL!UnknownFunction []
+[2022.10.23-12.41.45:926][543]LogWindows: Error: [Callstack] 0x00007ffb5f4226a1 ntdll.dll!UnknownFunction []
+[2022.10.23-12.41.45:926][543]LogWindows: Error: 
+[2022.10.23-12.41.45:939][543]LogExit: Executing StaticShutdownAfterError
+[2022.10.23-12.41.45:952][543]LogWindows: FPlatformMisc::RequestExit(1)
+[2022.10.23-12.41.45:952][543]LogWindows: FPlatformMisc::RequestExitWithStatus(1, 3)
+[2022.10.23-12.41.45:952][543]LogCore: Engine exit requested (reason: Win RequestExit)
+[2022.10.23-12.41.45:982][543]Log file closed, 10/23/22 21:41:45

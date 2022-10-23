@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define M_TEST_M_CharacterStatComponent_generated_h
 
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_13_SPARSE_DATA
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_13_RPC_WRAPPERS
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_13_INCLASS_NO_PURE_DECLS \
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_SPARSE_DATA
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_RPC_WRAPPERS
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUM_CharacterStatComponent(); \
 	friend struct Z_Construct_UClass_UM_CharacterStatComponent_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UM_CharacterStatComponent)
 
 
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_13_INCLASS \
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesUM_CharacterStatComponent(); \
 	friend struct Z_Construct_UClass_UM_CharacterStatComponent_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UM_CharacterStatComponent)
 
 
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_13_STANDARD_CONSTRUCTORS \
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UM_CharacterStatComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UM_CharacterStatComponent) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_13_ENHANCED_CONSTRUCTORS \
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UM_CharacterStatComponent(UM_CharacterStatComponent&&); \
@@ -58,32 +58,32 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UM_CharacterStatComponent)
 
 
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_13_PRIVATE_PROPERTY_OFFSET \
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Level() { return STRUCT_OFFSET(UM_CharacterStatComponent, Level); } \
 	FORCEINLINE static uint32 __PPO__CurrentHP() { return STRUCT_OFFSET(UM_CharacterStatComponent, CurrentHP); }
 
 
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_10_PROLOG
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_13_GENERATED_BODY_LEGACY \
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_12_PROLOG
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	M_Test_Source_M_Test_M_CharacterStatComponent_h_13_PRIVATE_PROPERTY_OFFSET \
-	M_Test_Source_M_Test_M_CharacterStatComponent_h_13_SPARSE_DATA \
-	M_Test_Source_M_Test_M_CharacterStatComponent_h_13_RPC_WRAPPERS \
-	M_Test_Source_M_Test_M_CharacterStatComponent_h_13_INCLASS \
-	M_Test_Source_M_Test_M_CharacterStatComponent_h_13_STANDARD_CONSTRUCTORS \
+	M_Test_Source_M_Test_M_CharacterStatComponent_h_15_PRIVATE_PROPERTY_OFFSET \
+	M_Test_Source_M_Test_M_CharacterStatComponent_h_15_SPARSE_DATA \
+	M_Test_Source_M_Test_M_CharacterStatComponent_h_15_RPC_WRAPPERS \
+	M_Test_Source_M_Test_M_CharacterStatComponent_h_15_INCLASS \
+	M_Test_Source_M_Test_M_CharacterStatComponent_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define M_Test_Source_M_Test_M_CharacterStatComponent_h_13_GENERATED_BODY \
+#define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	M_Test_Source_M_Test_M_CharacterStatComponent_h_13_PRIVATE_PROPERTY_OFFSET \
-	M_Test_Source_M_Test_M_CharacterStatComponent_h_13_SPARSE_DATA \
-	M_Test_Source_M_Test_M_CharacterStatComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	M_Test_Source_M_Test_M_CharacterStatComponent_h_13_INCLASS_NO_PURE_DECLS \
-	M_Test_Source_M_Test_M_CharacterStatComponent_h_13_ENHANCED_CONSTRUCTORS \
+	M_Test_Source_M_Test_M_CharacterStatComponent_h_15_PRIVATE_PROPERTY_OFFSET \
+	M_Test_Source_M_Test_M_CharacterStatComponent_h_15_SPARSE_DATA \
+	M_Test_Source_M_Test_M_CharacterStatComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	M_Test_Source_M_Test_M_CharacterStatComponent_h_15_INCLASS_NO_PURE_DECLS \
+	M_Test_Source_M_Test_M_CharacterStatComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

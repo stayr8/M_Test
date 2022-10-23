@@ -45,6 +45,7 @@ void UM_CharacterStatComponent::SetNewLevel(int32 NewLevel)
 		if (nullptr != CurrentStatData)
 		{
 			Level = NewLevel;
+			SetHP(CurrentStatData->MaxHP);
 			CurrentHP = CurrentStatData->MaxHP;
 		}
 		else
@@ -52,6 +53,48 @@ void UM_CharacterStatComponent::SetNewLevel(int32 NewLevel)
 			UE_LOG(LogTemp, Error, TEXT("Level (%d) data doesn't exist"), NewLevel);
 		}
 	}
+}
+
+void UM_CharacterStatComponent::SetDamage(float NewDamage)
+{
+	if (CurrentStatData != nullptr)
+	{
+		/*
+		CurrentHP = FMath::Clamp<float>(CurrentHP - NewDamage, 0, CurrentStatData->MaxHP);
+		if (CurrentHP <= 0)
+		{
+			OnHPIsZero.Broadcast();
+		}*/
+		SetHP(FMath::Clamp<float>(CurrentHP - NewDamage, 0, CurrentStatData->MaxHP));
+	}
+}
+
+void UM_CharacterStatComponent::SetHP(float NewHP)
+{
+	CurrentHP = NewHP;
+	// 체력 변동 델리게이트 호출
+	OnHPChanged.Broadcast();
+	// float 수치로 0에 최대한 근접한 오차 이하일 경우
+	if (CurrentHP < KINDA_SMALL_NUMBER)
+	{
+		CurrentHP = 0;
+
+		// 죽었을때의 델리게이트 호출
+		OnHPIsZero.Broadcast();
+	}
+}
+
+
+
+float UM_CharacterStatComponent::GetAttack()
+{
+	return CurrentStatData->Attack;
+}
+
+// 남은 체력의 퍼센티지 반환
+float UM_CharacterStatComponent::GetHPRatio()
+{
+	return (CurrentStatData->MaxHP < KINDA_SMALL_NUMBER) ? 0 : (CurrentHP / CurrentStatData->MaxHP);
 }
 
 

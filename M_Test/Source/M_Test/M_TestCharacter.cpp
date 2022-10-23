@@ -10,6 +10,8 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "M_CharacterStatComponent.h"
 #include "DrawDebugHelpers.h"
+#include "Components/WidgetComponent.h"
+#include "M_CharacterWidget.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AM_TestCharacter
@@ -50,6 +52,32 @@ AM_TestCharacter::AM_TestCharacter()
 
 	CharacterStat = CreateDefaultSubobject<UM_CharacterStatComponent>(TEXT("CHARACTERSTAT"));
 
+	HPBarWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HPBARWIDGET"));
+	HPBarWidget->SetupAttachment(GetMesh());
+
+	HPBarWidget->SetRelativeLocation(FVector(0, 0, 180));
+	HPBarWidget->SetWidgetSpace(EWidgetSpace::Screen);
+	static ConstructorHelpers::FClassFinder<UUserWidget> UI_HUD(TEXT("/Game/UI/WB_HPBar.WB_HPBar_C"));
+	if (UI_HUD.Succeeded())
+	{
+		HPBarWidget->SetWidgetClass(UI_HUD.Class);
+		HPBarWidget->SetDrawSize(FVector2D(150, 50));
+	}
+
+}
+
+void AM_TestCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+	
+	if (CurveFloat)
+	{
+		auto CharacterWidget = Cast<UM_CharacterWidget>(HPBarWidget->GetUserWidgetObject());
+		if (nullptr != CharacterWidget)
+		{
+			CharacterWidget->BindCharacterStat(CharacterStat);
+		}
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -81,6 +109,40 @@ void AM_TestCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AM_TestCharacter::OnResetVR);
 }
 
+
+void AM_TestCharacter::PostInitializeComponents()
+{
+	CharacterStat->OnHPIsZero.AddLambda([this]() -> void {
+		SetActorEnableCollision(false);
+		});
+}
+
+float AM_TestCharacter::TakeDamage(float DamageAmount, FDamageEvent const DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	float FinalDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	UE_LOG(LogTemp, Warning, TEXT("Actor Name : %s Damage : %f"), *GetName(), FinalDamage);
+
+	CharacterStat->SetDamage(FinalDamage);
+	return FinalDamage;
+}
+
+void AM_TestCharacter::AttackCheck()
+{
+	FHitResult HitResult;
+	FCollisionQueryParams Params(NAME_None, false, this);
+	bool bResult = GetWorld()->SweepSingleByChannel(HitResult, GetActorLocation(), GetActorLocation() + GetActorForwardVector() * 200.0f,
+		FQuat::Identity, ECollisionChannel::ECC_GameTraceChannel1, FCollisionShape::MakeSphere(50.0f), Params);
+
+	if (bResult)
+	{
+		if (HitResult.Actor.IsValid())
+		{
+			FDamageEvent DamageEvent;
+			HitResult.Actor->TakeDamage(CharacterStat->GetAttack(), DamageEvent, GetController(), this);
+		}
+	}
+
+}
 
 void AM_TestCharacter::OnResetVR()
 {
