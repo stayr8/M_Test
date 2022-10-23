@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\M_Test.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{E8C442F1-38EC-4C00-B7BC-BA88C37D9C12}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\M_Test.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\M_TestEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{028936AB-85A8-482F-B4A2-DFA6A59443B7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\M_Test">
+      <UniqueIdentifier>{C06C20A4-992E-4282-94C6-367A9C3BC2A3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\M_Test\M_Test.Build.cs">
+      <Filter>Source\M_Test</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\M_Test\M_Test.cpp">
+      <Filter>Source\M_Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\M_Test\M_Test.h">
+      <Filter>Source\M_Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\M_Test\M_TestCharacter.cpp">
+      <Filter>Source\M_Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\M_Test\M_TestCharacter.h">
+      <Filter>Source\M_Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\M_Test\M_TestGameMode.cpp">
+      <Filter>Source\M_Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\M_Test\M_TestGameMode.h">
+      <Filter>Source\M_Test</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

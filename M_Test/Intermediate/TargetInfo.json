@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "M_Test",
+			"Path": "D:\\Documents\\GitHub\\M_Test\\M_Test\\Source\\M_Test.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "M_TestEditor",
+			"Path": "D:\\Documents\\GitHub\\M_Test\\M_Test\\Source\\M_TestEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
