@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	M_TEST_API UClass* Z_Construct_UClass_UM_CharacterStatComponent_NoRegister();
+	UMG_API UClass* Z_Construct_UClass_UWidgetComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AM_TestCharacter::execTakeDamage)
@@ -133,6 +134,10 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CharacterStat;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HPBarWidget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HPBarWidget;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurveFloat_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurveFloat;
@@ -204,6 +209,14 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CharacterStat = { "CharacterStat", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AM_TestCharacter, CharacterStat), Z_Construct_UClass_UM_CharacterStatComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CharacterStat_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CharacterStat_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_HPBarWidget_MetaData[] = {
+		{ "Category", "UI" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "M_TestCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_HPBarWidget = { "HPBarWidget", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AM_TestCharacter, HPBarWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_HPBarWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_HPBarWidget_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CurveFloat_MetaData[] = {
 		{ "Category", "TimeLine" },
 		{ "ModuleRelativePath", "M_TestCharacter.h" },
@@ -216,6 +229,7 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_BaseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CharacterStat,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_HPBarWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CurveFloat,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AM_TestCharacter_Statics::StaticCppClassTypeInfo = {
@@ -245,7 +259,7 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AM_TestCharacter, 670782162);
+	IMPLEMENT_CLASS(AM_TestCharacter, 11787753);
 	template<> M_TEST_API UClass* StaticClass<AM_TestCharacter>()
 	{
 		return AM_TestCharacter::StaticClass();

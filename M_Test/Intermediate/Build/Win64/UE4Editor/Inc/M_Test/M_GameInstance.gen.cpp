@@ -53,6 +53,10 @@ static struct FScriptStruct_M_Test_StaticRegisterNativesFM_CharacterData
 #endif
 		static void* NewStructOps();
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharacterName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_CharacterName;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Level_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_Level;
@@ -64,6 +68,10 @@ static struct FScriptStruct_M_Test_StaticRegisterNativesFM_CharacterData
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Attack_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_Attack;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Speed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_Speed;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -79,6 +87,13 @@ static struct FScriptStruct_M_Test_StaticRegisterNativesFM_CharacterData
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FM_CharacterData>();
 	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_CharacterName_MetaData[] = {
+		{ "Category", "Data" },
+		{ "ModuleRelativePath", "M_GameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_CharacterName = { "CharacterName", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FM_CharacterData, CharacterName), METADATA_PARAMS(Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_CharacterName_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_CharacterName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Level_MetaData[] = {
 		{ "Category", "Data" },
@@ -100,10 +115,19 @@ static struct FScriptStruct_M_Test_StaticRegisterNativesFM_CharacterData
 	};
 #endif
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Attack = { "Attack", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FM_CharacterData, Attack), METADATA_PARAMS(Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Attack_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Attack_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Speed_MetaData[] = {
+		{ "Category", "Data" },
+		{ "ModuleRelativePath", "M_GameInstance.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Speed = { "Speed", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FM_CharacterData, Speed), METADATA_PARAMS(Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Speed_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Speed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FM_CharacterData_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_CharacterName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Level,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_MaxHP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Attack,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FM_CharacterData_Statics::NewProp_Speed,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FM_CharacterData_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_M_Test,
@@ -133,7 +157,7 @@ static struct FScriptStruct_M_Test_StaticRegisterNativesFM_CharacterData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FM_CharacterData_Hash() { return 2846397788U; }
+	uint32 Get_Z_Construct_UScriptStruct_FM_CharacterData_Hash() { return 2117572298U; }
 	void UM_GameInstance::StaticRegisterNativesUM_GameInstance()
 	{
 	}

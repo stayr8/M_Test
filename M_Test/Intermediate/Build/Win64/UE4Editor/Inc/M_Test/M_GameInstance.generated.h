@@ -21,10 +21,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 template<> M_TEST_API UScriptStruct* StaticStruct<struct FM_CharacterData>();
 
-#define M_Test_Source_M_Test_M_GameInstance_h_32_SPARSE_DATA
-#define M_Test_Source_M_Test_M_GameInstance_h_32_RPC_WRAPPERS
-#define M_Test_Source_M_Test_M_GameInstance_h_32_RPC_WRAPPERS_NO_PURE_DECLS
-#define M_Test_Source_M_Test_M_GameInstance_h_32_INCLASS_NO_PURE_DECLS \
+#define M_Test_Source_M_Test_M_GameInstance_h_36_SPARSE_DATA
+#define M_Test_Source_M_Test_M_GameInstance_h_36_RPC_WRAPPERS
+#define M_Test_Source_M_Test_M_GameInstance_h_36_RPC_WRAPPERS_NO_PURE_DECLS
+#define M_Test_Source_M_Test_M_GameInstance_h_36_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUM_GameInstance(); \
 	friend struct Z_Construct_UClass_UM_GameInstance_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(UM_GameInstance)
 
 
-#define M_Test_Source_M_Test_M_GameInstance_h_32_INCLASS \
+#define M_Test_Source_M_Test_M_GameInstance_h_36_INCLASS \
 private: \
 	static void StaticRegisterNativesUM_GameInstance(); \
 	friend struct Z_Construct_UClass_UM_GameInstance_Statics; \
@@ -42,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(UM_GameInstance)
 
 
-#define M_Test_Source_M_Test_M_GameInstance_h_32_STANDARD_CONSTRUCTORS \
+#define M_Test_Source_M_Test_M_GameInstance_h_36_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UM_GameInstance(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UM_GameInstance) \
@@ -55,7 +55,7 @@ private: \
 public:
 
 
-#define M_Test_Source_M_Test_M_GameInstance_h_32_ENHANCED_CONSTRUCTORS \
+#define M_Test_Source_M_Test_M_GameInstance_h_36_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UM_GameInstance(UM_GameInstance&&); \
@@ -66,31 +66,31 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UM_GameInstance)
 
 
-#define M_Test_Source_M_Test_M_GameInstance_h_32_PRIVATE_PROPERTY_OFFSET \
+#define M_Test_Source_M_Test_M_GameInstance_h_36_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__M_CharacterTable() { return STRUCT_OFFSET(UM_GameInstance, M_CharacterTable); }
 
 
-#define M_Test_Source_M_Test_M_GameInstance_h_29_PROLOG
-#define M_Test_Source_M_Test_M_GameInstance_h_32_GENERATED_BODY_LEGACY \
+#define M_Test_Source_M_Test_M_GameInstance_h_33_PROLOG
+#define M_Test_Source_M_Test_M_GameInstance_h_36_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	M_Test_Source_M_Test_M_GameInstance_h_32_PRIVATE_PROPERTY_OFFSET \
-	M_Test_Source_M_Test_M_GameInstance_h_32_SPARSE_DATA \
-	M_Test_Source_M_Test_M_GameInstance_h_32_RPC_WRAPPERS \
-	M_Test_Source_M_Test_M_GameInstance_h_32_INCLASS \
-	M_Test_Source_M_Test_M_GameInstance_h_32_STANDARD_CONSTRUCTORS \
+	M_Test_Source_M_Test_M_GameInstance_h_36_PRIVATE_PROPERTY_OFFSET \
+	M_Test_Source_M_Test_M_GameInstance_h_36_SPARSE_DATA \
+	M_Test_Source_M_Test_M_GameInstance_h_36_RPC_WRAPPERS \
+	M_Test_Source_M_Test_M_GameInstance_h_36_INCLASS \
+	M_Test_Source_M_Test_M_GameInstance_h_36_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define M_Test_Source_M_Test_M_GameInstance_h_32_GENERATED_BODY \
+#define M_Test_Source_M_Test_M_GameInstance_h_36_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	M_Test_Source_M_Test_M_GameInstance_h_32_PRIVATE_PROPERTY_OFFSET \
-	M_Test_Source_M_Test_M_GameInstance_h_32_SPARSE_DATA \
-	M_Test_Source_M_Test_M_GameInstance_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
-	M_Test_Source_M_Test_M_GameInstance_h_32_INCLASS_NO_PURE_DECLS \
-	M_Test_Source_M_Test_M_GameInstance_h_32_ENHANCED_CONSTRUCTORS \
+	M_Test_Source_M_Test_M_GameInstance_h_36_PRIVATE_PROPERTY_OFFSET \
+	M_Test_Source_M_Test_M_GameInstance_h_36_SPARSE_DATA \
+	M_Test_Source_M_Test_M_GameInstance_h_36_RPC_WRAPPERS_NO_PURE_DECLS \
+	M_Test_Source_M_Test_M_GameInstance_h_36_INCLASS_NO_PURE_DECLS \
+	M_Test_Source_M_Test_M_GameInstance_h_36_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

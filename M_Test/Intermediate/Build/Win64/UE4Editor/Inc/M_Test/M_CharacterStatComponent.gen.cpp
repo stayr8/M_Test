@@ -38,7 +38,11 @@ void EmptyLinkFunctionForGeneratedCodeM_CharacterStatComponent() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentHP_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FIntPropertyParams NewProp_CurrentHP;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CurrentHP;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentSpeed_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_CurrentSpeed;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -70,10 +74,19 @@ void EmptyLinkFunctionForGeneratedCodeM_CharacterStatComponent() {}
 		{ "ModuleRelativePath", "M_CharacterStatComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP = { "CurrentHP", nullptr, (EPropertyFlags)0x0040000000002801, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UM_CharacterStatComponent, CurrentHP), METADATA_PARAMS(Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP = { "CurrentHP", nullptr, (EPropertyFlags)0x0040000000002801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UM_CharacterStatComponent, CurrentHP), METADATA_PARAMS(Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentSpeed_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "Stat" },
+		{ "ModuleRelativePath", "M_CharacterStatComponent.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentSpeed = { "CurrentSpeed", nullptr, (EPropertyFlags)0x0040000000002801, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UM_CharacterStatComponent, CurrentSpeed), METADATA_PARAMS(Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentSpeed_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UM_CharacterStatComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_Level,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentSpeed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UM_CharacterStatComponent_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UM_CharacterStatComponent>::IsAbstract,
@@ -102,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeM_CharacterStatComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UM_CharacterStatComponent, 1619976741);
+	IMPLEMENT_CLASS(UM_CharacterStatComponent, 3267492952);
 	template<> M_TEST_API UClass* StaticClass<UM_CharacterStatComponent>()
 	{
 		return UM_CharacterStatComponent::StaticClass();

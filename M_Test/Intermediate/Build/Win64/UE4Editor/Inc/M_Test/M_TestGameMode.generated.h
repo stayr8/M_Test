@@ -58,7 +58,11 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AM_TestGameMode)
 
 
-#define M_Test_Source_M_Test_M_TestGameMode_h_12_PRIVATE_PROPERTY_OFFSET
+#define M_Test_Source_M_Test_M_TestGameMode_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CurrentWidget() { return STRUCT_OFFSET(AM_TestGameMode, CurrentWidget); } \
+	FORCEINLINE static uint32 __PPO__HUDWidget() { return STRUCT_OFFSET(AM_TestGameMode, HUDWidget); }
+
+
 #define M_Test_Source_M_Test_M_TestGameMode_h_9_PROLOG
 #define M_Test_Source_M_Test_M_TestGameMode_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

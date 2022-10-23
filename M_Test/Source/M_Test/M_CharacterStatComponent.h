@@ -27,6 +27,7 @@ public:
 	void SetNewLevel(int32 NewLevel);
 	void SetDamage(float NewDamage);
 	void SetHP(float NewHP);
+	float SetSpeed();
 	float GetAttack();
 	float GetHPRatio();
 
@@ -39,7 +40,9 @@ private:
 		int32 Level;
 
 	UPROPERTY(Transient, EditInstanceOnly, Category = "Stat", Meta = (AllowPrivateAccess = true))
-		int32 CurrentHP;
+		float CurrentHP;
 
+	UPROPERTY(Transient, EditInstanceOnly, Category = "Stat", Meta = (AllowPrivateAccess = true))
+		float CurrentSpeed;
 		
 };

@@ -60,7 +60,8 @@ public: \
 
 #define M_Test_Source_M_Test_M_CharacterStatComponent_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Level() { return STRUCT_OFFSET(UM_CharacterStatComponent, Level); } \
-	FORCEINLINE static uint32 __PPO__CurrentHP() { return STRUCT_OFFSET(UM_CharacterStatComponent, CurrentHP); }
+	FORCEINLINE static uint32 __PPO__CurrentHP() { return STRUCT_OFFSET(UM_CharacterStatComponent, CurrentHP); } \
+	FORCEINLINE static uint32 __PPO__CurrentSpeed() { return STRUCT_OFFSET(UM_CharacterStatComponent, CurrentSpeed); }
 
 
 #define M_Test_Source_M_Test_M_CharacterStatComponent_h_12_PROLOG

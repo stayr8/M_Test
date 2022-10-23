@@ -19,7 +19,9 @@ void UM_CharacterWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
 	HPProgressBar = Cast<UProgressBar>(GetWidgetFromName(TEXT("PB_HPBar")));
-	UpdateHPWidget();
+	if (nullptr != HPProgressBar) {
+		UpdateHPWidget();
+	}
 }
 
 void UM_CharacterWidget::UpdateHPWidget()

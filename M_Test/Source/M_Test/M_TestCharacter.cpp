@@ -12,6 +12,7 @@
 #include "DrawDebugHelpers.h"
 #include "Components/WidgetComponent.h"
 #include "M_CharacterWidget.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AM_TestCharacter
@@ -51,8 +52,8 @@ AM_TestCharacter::AM_TestCharacter()
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 
 	CharacterStat = CreateDefaultSubobject<UM_CharacterStatComponent>(TEXT("CHARACTERSTAT"));
-
-	/*
+	
+	
 	HPBarWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HPBARWIDGET"));
 	HPBarWidget->SetupAttachment(GetMesh());
 
@@ -62,8 +63,8 @@ AM_TestCharacter::AM_TestCharacter()
 	if (UI_HUD.Succeeded())
 	{
 		HPBarWidget->SetWidgetClass(UI_HUD.Class);
-		HPBarWidget->SetDrawSize(FVector2D(150, 50));
-	}*/
+		HPBarWidget->SetDrawSize(FVector2D(500.0f, 500.0f));
+	}
 
 }
 
@@ -71,12 +72,14 @@ void AM_TestCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	/*
+	
 	auto CharacterWidget = Cast<UM_CharacterWidget>(HPBarWidget->GetUserWidgetObject());
 	if (nullptr != CharacterWidget)
 	{
 		CharacterWidget->BindCharacterStat(CharacterStat);
-	}*/
+		
+	}
+	GetCharacterMovement()->MaxWalkSpeed = CharacterStat->SetSpeed();
 	
 }
 

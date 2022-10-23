@@ -16,12 +16,14 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-	/*
+	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG")
 		UUserWidget* CurrentWidget;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG")
-		TSubclassOf<UUserWidget> HUDWidget;*/
+		TSubclassOf<UUserWidget> HUDWidget;
+
+
 };
 
 

@@ -5,6 +5,8 @@
 #include "UObject/ConstructorHelpers.h"
 #include "Blueprint/UserWidget.h"
 
+
+
 AM_TestGameMode::AM_TestGameMode()
 {
 	// set default pawn class to our Blueprinted character
@@ -13,12 +15,13 @@ AM_TestGameMode::AM_TestGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+
 }
 
 void AM_TestGameMode::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), HUDWidget);
-	//CurrentWidget->AddToViewport();
+	CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), HUDWidget);
+	CurrentWidget->AddToViewport();
 }

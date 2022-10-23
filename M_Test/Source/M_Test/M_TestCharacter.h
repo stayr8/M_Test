@@ -35,8 +35,9 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Stat")
 		class UM_CharacterStatComponent* CharacterStat;
 
-	//UPROPERTY(VisibleAnywhere, Category = "UI")
-		//class UWidgetComponent* HPBarWidget;
+	UPROPERTY(VisibleAnywhere, Category = "UI")
+		class UWidgetComponent* HPBarWidget;
+
 
 	void PostInitializeComponents();
 

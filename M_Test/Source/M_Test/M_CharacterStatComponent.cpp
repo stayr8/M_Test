@@ -14,7 +14,7 @@ UM_CharacterStatComponent::UM_CharacterStatComponent()
 	bWantsInitializeComponent = true;
 
 	Level = 1;
-	CurrentHP = 1;
+
 
 	// ...
 }
@@ -47,6 +47,7 @@ void UM_CharacterStatComponent::SetNewLevel(int32 NewLevel)
 			Level = NewLevel;
 			SetHP(CurrentStatData->MaxHP);
 			CurrentHP = CurrentStatData->MaxHP;
+			CurrentSpeed = CurrentStatData->Speed;
 		}
 		else
 		{
@@ -59,12 +60,6 @@ void UM_CharacterStatComponent::SetDamage(float NewDamage)
 {
 	if (CurrentStatData != nullptr)
 	{
-		/*
-		CurrentHP = FMath::Clamp<float>(CurrentHP - NewDamage, 0, CurrentStatData->MaxHP);
-		if (CurrentHP <= 0)
-		{
-			OnHPIsZero.Broadcast();
-		}*/
 		SetHP(FMath::Clamp<float>(CurrentHP - NewDamage, 0, CurrentStatData->MaxHP));
 	}
 }
@@ -84,6 +79,11 @@ void UM_CharacterStatComponent::SetHP(float NewHP)
 	}
 }
 
+float UM_CharacterStatComponent::SetSpeed()
+{
+	return CurrentSpeed;
+}
+
 
 
 float UM_CharacterStatComponent::GetAttack()
@@ -94,7 +94,7 @@ float UM_CharacterStatComponent::GetAttack()
 // 남은 체력의 퍼센티지 반환
 float UM_CharacterStatComponent::GetHPRatio()
 {
-	return (CurrentHP / CurrentStatData->MaxHP);
+	return (CurrentStatData->MaxHP < KINDA_SMALL_NUMBER) ? 0 : (CurrentHP / CurrentStatData->MaxHP);
 }
 
 
