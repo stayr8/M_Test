@@ -20,6 +20,7 @@ public:
 protected:
 	virtual void NativeConstruct() override;
 	void UpdateHPWidget();
+
 private:
 	TWeakObjectPtr<class UM_CharacterStatComponent> CurrentCharacterStat;
 

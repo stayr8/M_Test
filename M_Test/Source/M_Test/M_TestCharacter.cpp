@@ -52,6 +52,7 @@ AM_TestCharacter::AM_TestCharacter()
 
 	CharacterStat = CreateDefaultSubobject<UM_CharacterStatComponent>(TEXT("CHARACTERSTAT"));
 
+	/*
 	HPBarWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HPBARWIDGET"));
 	HPBarWidget->SetupAttachment(GetMesh());
 
@@ -62,7 +63,7 @@ AM_TestCharacter::AM_TestCharacter()
 	{
 		HPBarWidget->SetWidgetClass(UI_HUD.Class);
 		HPBarWidget->SetDrawSize(FVector2D(150, 50));
-	}
+	}*/
 
 }
 
@@ -70,14 +71,13 @@ void AM_TestCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	if (CurveFloat)
+	/*
+	auto CharacterWidget = Cast<UM_CharacterWidget>(HPBarWidget->GetUserWidgetObject());
+	if (nullptr != CharacterWidget)
 	{
-		auto CharacterWidget = Cast<UM_CharacterWidget>(HPBarWidget->GetUserWidgetObject());
-		if (nullptr != CharacterWidget)
-		{
-			CharacterWidget->BindCharacterStat(CharacterStat);
-		}
-	}
+		CharacterWidget->BindCharacterStat(CharacterStat);
+	}*/
+	
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -112,6 +112,8 @@ void AM_TestCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 
 void AM_TestCharacter::PostInitializeComponents()
 {
+	Super::PostInitializeComponents();
+
 	CharacterStat->OnHPIsZero.AddLambda([this]() -> void {
 		SetActorEnableCollision(false);
 		});

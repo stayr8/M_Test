@@ -94,7 +94,7 @@ float UM_CharacterStatComponent::GetAttack()
 // 남은 체력의 퍼센티지 반환
 float UM_CharacterStatComponent::GetHPRatio()
 {
-	return (CurrentStatData->MaxHP < KINDA_SMALL_NUMBER) ? 0 : (CurrentHP / CurrentStatData->MaxHP);
+	return (CurrentHP / CurrentStatData->MaxHP);
 }
 
 

@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FDamageEvent;
+class AController;
+class AActor;
 #ifdef M_TEST_M_TestCharacter_generated_h
 #error "M_TestCharacter.generated.h already included, missing '#pragma once' in M_TestCharacter.h"
 #endif
 #define M_TEST_M_TestCharacter_generated_h
 
 #define M_Test_Source_M_Test_M_TestCharacter_h_12_SPARSE_DATA
-#define M_Test_Source_M_Test_M_TestCharacter_h_12_RPC_WRAPPERS
-#define M_Test_Source_M_Test_M_TestCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define M_Test_Source_M_Test_M_TestCharacter_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execTakeDamage);
+
+
+#define M_Test_Source_M_Test_M_TestCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execTakeDamage);
+
+
 #define M_Test_Source_M_Test_M_TestCharacter_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAM_TestCharacter(); \

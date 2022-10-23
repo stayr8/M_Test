@@ -5,6 +5,7 @@
 #include "M_CharacterStatComponent.h"
 #include "Components/ProgressBar.h"
 
+
 void UM_CharacterWidget::BindCharacterStat(UM_CharacterStatComponent* NewCharacterStat)
 {
 	if (nullptr != NewCharacterStat)
@@ -31,3 +32,4 @@ void UM_CharacterWidget::UpdateHPWidget()
 		}
 	}
 }
+

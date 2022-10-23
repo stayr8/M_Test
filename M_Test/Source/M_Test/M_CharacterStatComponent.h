@@ -38,7 +38,7 @@ private:
 	UPROPERTY(EditInstanceOnly, Category = "Stat", Meta = (AllowPrivateAccess = true))
 		int32 Level;
 
-	UPROPERTY(Transient, VisibleInstanceOnly, Category = "Stat", Meta = (AllowPrivateAccess = true))
+	UPROPERTY(Transient, EditInstanceOnly, Category = "Stat", Meta = (AllowPrivateAccess = true))
 		int32 CurrentHP;
 
 		

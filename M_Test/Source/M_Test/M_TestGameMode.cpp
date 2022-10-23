@@ -3,6 +3,7 @@
 #include "M_TestGameMode.h"
 #include "M_TestCharacter.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Blueprint/UserWidget.h"
 
 AM_TestGameMode::AM_TestGameMode()
 {
@@ -12,4 +13,12 @@ AM_TestGameMode::AM_TestGameMode()
 	{
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
+}
+
+void AM_TestGameMode::BeginPlay()
+{
+	Super::BeginPlay();
+
+	//CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), HUDWidget);
+	//CurrentWidget->AddToViewport();
 }

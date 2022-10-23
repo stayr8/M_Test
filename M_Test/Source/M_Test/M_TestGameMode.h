@@ -13,6 +13,15 @@ class AM_TestGameMode : public AGameModeBase
 
 public:
 	AM_TestGameMode();
+
+protected:
+	virtual void BeginPlay() override;
+	/*
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG")
+		UUserWidget* CurrentWidget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UMG")
+		TSubclassOf<UUserWidget> HUDWidget;*/
 };
 
 

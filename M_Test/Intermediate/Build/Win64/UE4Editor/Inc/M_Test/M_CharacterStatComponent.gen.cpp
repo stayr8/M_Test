@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeM_CharacterStatComponent() {}
 		{ "ModuleRelativePath", "M_CharacterStatComponent.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP = { "CurrentHP", nullptr, (EPropertyFlags)0x0040000000022801, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UM_CharacterStatComponent, CurrentHP), METADATA_PARAMS(Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP = { "CurrentHP", nullptr, (EPropertyFlags)0x0040000000002801, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UM_CharacterStatComponent, CurrentHP), METADATA_PARAMS(Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UM_CharacterStatComponent_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_Level,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UM_CharacterStatComponent_Statics::NewProp_CurrentHP,
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeM_CharacterStatComponent() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UM_CharacterStatComponent, 3513615031);
+	IMPLEMENT_CLASS(UM_CharacterStatComponent, 1619976741);
 	template<> M_TEST_API UClass* StaticClass<UM_CharacterStatComponent>()
 	{
 		return UM_CharacterStatComponent::StaticClass();
