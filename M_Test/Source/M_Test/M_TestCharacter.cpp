@@ -8,6 +8,8 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "M_CharacterStatComponent.h"
+#include "DrawDebugHelpers.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AM_TestCharacter
@@ -45,6 +47,9 @@ AM_TestCharacter::AM_TestCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+
+	CharacterStat = CreateDefaultSubobject<UM_CharacterStatComponent>(TEXT("CHARACTERSTAT"));
+
 }
 
 //////////////////////////////////////////////////////////////////////////

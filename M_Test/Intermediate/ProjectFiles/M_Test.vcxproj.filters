@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\M_Test.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E8C442F1-38EC-4C00-B7BC-BA88C37D9C12}</UniqueIdentifier>
+      <UniqueIdentifier>{E47A9188-1A3E-4293-80FF-850B75F134D2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\M_Test.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{028936AB-85A8-482F-B4A2-DFA6A59443B7}</UniqueIdentifier>
+      <UniqueIdentifier>{B52EB0CA-3B56-450F-BA7B-F4921D9E49DD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\M_Test">
-      <UniqueIdentifier>{C06C20A4-992E-4282-94C6-367A9C3BC2A3}</UniqueIdentifier>
+      <UniqueIdentifier>{930C9045-6AE3-4716-B025-18B0D36427BE}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\M_Test\M_CharacterStatComponent.cpp">
+      <Filter>Source\M_Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\M_Test\M_CharacterStatComponent.h">
+      <Filter>Source\M_Test</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\M_Test\M_GameInstance.cpp">
+      <Filter>Source\M_Test</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\M_Test\M_GameInstance.h">
+      <Filter>Source\M_Test</Filter>
+    </ClInclude>
     <None Include="..\..\Source\M_Test\M_Test.Build.cs">
       <Filter>Source\M_Test</Filter>
     </None>
