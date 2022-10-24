@@ -19,12 +19,14 @@ class AActor;
 #define M_Test_Source_M_Test_M_TestCharacter_h_12_SPARSE_DATA
 #define M_Test_Source_M_Test_M_TestCharacter_h_12_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execTakeDamage);
+	DECLARE_FUNCTION(execTakeDamage); \
+	DECLARE_FUNCTION(execattach_Weapon);
 
 
 #define M_Test_Source_M_Test_M_TestCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execTakeDamage);
+	DECLARE_FUNCTION(execTakeDamage); \
+	DECLARE_FUNCTION(execattach_Weapon);
 
 
 #define M_Test_Source_M_Test_M_TestCharacter_h_12_INCLASS_NO_PURE_DECLS \

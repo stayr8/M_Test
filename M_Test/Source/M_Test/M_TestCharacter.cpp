@@ -13,6 +13,8 @@
 #include "Components/WidgetComponent.h"
 #include "M_CharacterWidget.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Engine/EngineTypes.h"
+
 
 //////////////////////////////////////////////////////////////////////////
 // AM_TestCharacter
@@ -66,6 +68,8 @@ AM_TestCharacter::AM_TestCharacter()
 		HPBarWidget->SetDrawSize(FVector2D(500.0f, 500.0f));
 	}
 
+
+
 }
 
 void AM_TestCharacter::BeginPlay()
@@ -112,6 +116,21 @@ void AM_TestCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerIn
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AM_TestCharacter::OnResetVR);
 }
 
+
+void AM_TestCharacter::attach_Weapon(TSubclassOf<AActor> WeaponClass, FName socketName)
+{
+
+	const FTransform orientation_socket = GetMesh()->GetSocketTransform(socketName, ERelativeTransformSpace::RTS_World);
+
+	newWeapon = GetWorld()->SpawnActor(WeaponClass, &orientation_socket);
+	if (newWeapon == nullptr)
+	{
+		return;
+	}
+	FAttachmentTransformRules rules(EAttachmentRule::SnapToTarget, EAttachmentRule::SnapToTarget, EAttachmentRule::KeepWorld, true);
+	newWeapon->AttachToComponent(GetMesh(), rules, socketName);
+
+}
 
 void AM_TestCharacter::PostInitializeComponents()
 {

@@ -17,14 +17,14 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 	M_TEST_API UClass* Z_Construct_UClass_AM_TestCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_M_Test();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FDamageEvent();
 	ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	M_TEST_API UClass* Z_Construct_UClass_UM_CharacterStatComponent_NoRegister();
 	UMG_API UClass* Z_Construct_UClass_UWidgetComponent_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UCurveFloat_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AM_TestCharacter::execTakeDamage)
 	{
@@ -37,13 +37,60 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 		*(float*)Z_Param__Result=P_THIS->TakeDamage(Z_Param_DamageAmount,Z_Param_DamageEvent,Z_Param_EventInstigator,Z_Param_DamageCauser);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AM_TestCharacter::execattach_Weapon)
+	{
+		P_GET_OBJECT(UClass,Z_Param_WeaponClass);
+		P_GET_PROPERTY(FNameProperty,Z_Param_socketName);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->attach_Weapon(Z_Param_WeaponClass,Z_Param_socketName);
+		P_NATIVE_END;
+	}
 	void AM_TestCharacter::StaticRegisterNativesAM_TestCharacter()
 	{
 		UClass* Class = AM_TestCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "attach_Weapon", &AM_TestCharacter::execattach_Weapon },
 			{ "TakeDamage", &AM_TestCharacter::execTakeDamage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics
+	{
+		struct M_TestCharacter_eventattach_Weapon_Parms
+		{
+			TSubclassOf<AActor>  WeaponClass;
+			FName socketName;
+		};
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_WeaponClass;
+		static const UE4CodeGen_Private::FNamePropertyParams NewProp_socketName;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::NewProp_WeaponClass = { "WeaponClass", nullptr, (EPropertyFlags)0x0014000000000080, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(M_TestCharacter_eventattach_Weapon_Parms, WeaponClass), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::NewProp_socketName = { "socketName", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(M_TestCharacter_eventattach_Weapon_Parms, socketName), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::NewProp_WeaponClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::NewProp_socketName,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Weapon" },
+		{ "ModuleRelativePath", "M_TestCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AM_TestCharacter, nullptr, "attach_Weapon", nullptr, nullptr, sizeof(M_TestCharacter_eventattach_Weapon_Parms), Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AM_TestCharacter_attach_Weapon()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AM_TestCharacter_attach_Weapon_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AM_TestCharacter_TakeDamage_Statics
 	{
@@ -138,9 +185,9 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HPBarWidget;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurveFloat_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_newWeapon_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurveFloat;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_newWeapon;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -150,6 +197,7 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_M_Test,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AM_TestCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AM_TestCharacter_attach_Weapon, "attach_Weapon" }, // 1357373217
 		{ &Z_Construct_UFunction_AM_TestCharacter_TakeDamage, "TakeDamage" }, // 3680896678
 	};
 #if WITH_METADATA
@@ -217,12 +265,12 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_HPBarWidget = { "HPBarWidget", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AM_TestCharacter, HPBarWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_HPBarWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_HPBarWidget_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CurveFloat_MetaData[] = {
-		{ "Category", "TimeLine" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_newWeapon_MetaData[] = {
+		{ "Category", "M_TestCharacter" },
 		{ "ModuleRelativePath", "M_TestCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CurveFloat = { "CurveFloat", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AM_TestCharacter, CurveFloat), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CurveFloat_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CurveFloat_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_newWeapon = { "newWeapon", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AM_TestCharacter, newWeapon), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_newWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_newWeapon_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AM_TestCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_FollowCamera,
@@ -230,7 +278,7 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_BaseLookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CharacterStat,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_HPBarWidget,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_CurveFloat,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AM_TestCharacter_Statics::NewProp_newWeapon,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AM_TestCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AM_TestCharacter>::IsAbstract,
@@ -259,7 +307,7 @@ void EmptyLinkFunctionForGeneratedCodeM_TestCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AM_TestCharacter, 11787753);
+	IMPLEMENT_CLASS(AM_TestCharacter, 3539771338);
 	template<> M_TEST_API UClass* StaticClass<AM_TestCharacter>()
 	{
 		return AM_TestCharacter::StaticClass();

@@ -38,6 +38,12 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "UI")
 		class UWidgetComponent* HPBarWidget;
 
+	UFUNCTION(BlueprintCallable, Category = "Weapon")
+		void attach_Weapon(TSubclassOf<AActor> WeaponClass, FName socketName);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		AActor* newWeapon;
+
 
 	void PostInitializeComponents();
 
@@ -47,8 +53,7 @@ public:
 	void AttackCheck();
 
 public:
-	UPROPERTY(EditAnywhere, Category = "TimeLine")
-		UCurveFloat* CurveFloat;
+	
 
 protected:
 
